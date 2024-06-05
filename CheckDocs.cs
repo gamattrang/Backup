@@ -13,7 +13,7 @@ internal class CheckDocs
         try
         {
             string output = Md5Encode(new DeviceIdBuilder().AddMachineName().AddProcessorId()
-                           .AddMotherboardSerialNumber().AddSystemDriveSerialNumber().ToString()) + "ActiveGPMLogin";
+                           .AddMotherboardSerialNumber().AddSystemDriveSerialNumber().ToString());
             WebClient client = new WebClient();
             string req = client.DownloadString("https://docs.google.com/");
             if (req.Contains(output))
