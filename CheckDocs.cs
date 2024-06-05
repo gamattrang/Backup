@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 internal class CheckDocs
 {
-    private void StartCheck(object sender, EventArgs e)
+    public void StartCheck()
     {
         try
         {
