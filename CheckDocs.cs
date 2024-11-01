@@ -6,9 +6,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-internal class CheckDocs
+public class CheckDocs
 {
-    public void StartCheck()
+    public static void StartCheck()
     {
         try
         {
